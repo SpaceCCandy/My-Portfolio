@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Cindy Ge</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* ===== Fonts ===== */
+        @font-face {
+            font-family: 'mightySouly';
+            src: url(MightySouly-lxggD.ttf);
+        }
+        @font-face {
+            font-family: 'starBorn';
+            src: url(Starborn.ttf);
+        }
+        @font-face {
+            font-family: 'paperNotes';
+            src: url(Papernotes.ttf);
+        }
+
+        /* ===== Background ===== */
+        body {
+            background: linear-gradient(-45deg, #ffbaba, #fbdaac, #ffe797, #ffc9d6);
+            background-size: 1000%;
+            animation: gradientShift 12s ease infinite;
+        }
+        @keyframes gradientShift {
+            0%   { background-position: 0% 50%; }
+            50%  { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        /* ===== Text ===== */
+        h1 {
+            font-family: 'mightySouly';
+            font-size: clamp(0.9rem, 10vw, 20rem);
+        }
+        h2 {
+            font-family: 'mightySouly';
+            font-size: clamp(0.9rem, 4vw, 20rem);
+            padding: 20px;
+        }
+        p {
+            font-family: 'paperNotes';
+            font-size: clamp(0.9rem, 2vw, 20rem);
+            margin-top: 0;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        /* ===== buttons ===== */
+        .menuBtn {
+            font-family: 'mightySouly';
+            display: block;
+            margin: 1em auto;
+            border-radius: 5px;
+            width: 100px;
+            height: 25px;
+            padding: 10px;
+            background-color: rgb(255, 255, 255);
+            color: rgb(223, 156, 41);
+            text-align: center;
+            text-decoration: none;
+        }
+        .menuBtn:hover {
+            background-color: rgb(244, 214, 162);
+            color: white;
+        }
+
+        /* ===== Island Navigation ===== */
+
+        .navRow {
+            width: 90vw;
+            max-width: 3000px;
+            aspect-ratio: 20 / 9;
+            position: relative;
+            margin: 0 auto;
+            margin-top: 10%;
+            margin-bottom: 20%;
+        }
+
+        .navRow a {
+            text-decoration: none;
+        }
+
+        .navRow img {
+            position: absolute;
+            height: auto;
+        }
+
+        .ground {
+            width: 65%;
+            bottom: 21%;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 1;
+        }
+
+        .navBtn {
+            width: 20%;
+            z-index: 2;
+            transition: filter 0.2s ease, transform 0.2s ease;
+        }
+
+        .navBtn:hover {
+            filter: brightness(1.15);
+            transform: scale(1.05);
+        }
+
+        /* Individual button positions */
+        .aboutme {
+            top: 9%;
+            left: 22%;
+        }
+        
+        .projects {
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .projects:hover {
+            transform: translateX(-50%) scale(1.05);
+        }
+
+        .events {
+            top: 15%;
+            left: 56%;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Cindy Ge</h1>
+    <p>“Keep your face always toward the sunshine — and shadows will fall behind you.” — Walt Whitman</p>
+
+    <div class="navRow">
+        <img src="assets/Portfolio_Ground.png" class="ground" alt="ground">
+        <a href="#about-me">
+            <img src="assets/Portfolio_AboutMe.png" class="navBtn aboutme" alt="Go to about me">
+        </a>
+        <a href="#projects">
+            <img src="assets/Portfolio_Projects.png" class="navBtn projects" alt="Go to projects">
+        </a>
+        <a href="#events">
+            <img src="assets/Portfolio_Events.png" class="navBtn events" alt="Go to events">
+        </a>
+    </div>
+
+    <h2 id="about-me">About me</h2>
+    <p>Hi! I'm Cindy. I'm both a artist and a programmer.</p>
+    <h2 id="projects">Projects</h2>
+    <h2 id="events">Events</h2>
+
+</body>
+</html>

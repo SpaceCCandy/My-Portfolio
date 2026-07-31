@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Zhi Yao Ge</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+    @font-face {
+        font-family: 'mightySouly';
+        src: url(MightySouly-lxggD.ttf);
+    }
+    @font-face {
+        font-family: 'starBorn';
+        src: url(Starborn.ttf);
+    }
+    @font-face {
+        font-family: 'paperNotes';
+        src: url(Papernotes.ttf);
+    }
+
+    body {
+        background: linear-gradient(-45deg, #ffe3f6, #f1eea7, #ffd9a0, #ffe3f6);
+        background-size: 400% 400%;
+        animation: gradientShift 12s ease infinite;
+    }
+    @keyframes gradientShift {
+        0%   { background-position: 0% 50%; }
+        50%  { background-position: 100% 50%; }
+        100% { background-position: 0% 50%; }
+    }
+    h1 {
+        font-family: 'mightySouly';
+        padding: 20px;
+    }
+    ul { /*Menu button list*/
+        list-style-type: none;
+        padding: 0;
+    }   
+
+    .menuBtn { /*Menu buttons*/
+        font-family: 'mightySouly';
+        display: block;
+        margin: 1em;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 5px;
+        width: 100px; /* Set a fixed width */
+        height: 25px;
+        padding: 10px; /* Adds space inside the box */
+        background-color: rgb(255, 255, 255); /* Adds a background color */
+        
+
+        /* Text */
+        color: rgb(223, 156, 41);
+        text-align: center; 
+        text-decoration: none;
+    }
+    .menuBtn:hover {background-color: rgb(244, 214, 162);color: white;}
+    
+    p {
+        font-family: 'paperNotes';
+    }
+    </style>
+</head>
+<body>
+
+    <h1>Cindy Ge</h1>
+    <p>“Keep your face always toward the sunshine — and shadows will fall behind you.” — Walt Whitman</p>
+    <ul>
+        <li><a class="menuBtn" href="Home.html">Home</a></li>
+        <li><a class="menuBtn" href="About.html">About</a></li>
+        <li><a class="menuBtn" href="Profolio">Project</a></li>
+        <li><a  class="menuBtn" href="Events.html">Events</a></li>
+    </ul>
+</body>
+</html>
