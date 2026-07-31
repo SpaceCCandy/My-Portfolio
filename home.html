@@ -25,8 +25,8 @@
 
         /* ===== Background ===== */
         body {
-            background: linear-gradient(-45deg, #ffbaba, #fbdaac, #ffe797, #ffc9d6);
-            background-size: 1000%;
+            background: linear-gradient(-45deg, #ffbaba, #fbdaac, #ffe797, #ffdae3);
+            background-size: 100%;
             animation: gradientShift 12s ease infinite;
         }
         @keyframes gradientShift {
@@ -39,17 +39,21 @@
         h1 {
             font-family: 'mightySouly';
             font-size: clamp(0.9rem, 10vw, 20rem);
+            padding: 20px;
             line-height: .2;
         }
         h2 {
             font-family: 'mightySouly';
             font-size: clamp(0.9rem, 4vw, 20rem);
             padding: 20px;
+            line-height: .2;
         }
         p {
             font-family: 'paperNotes';
             font-size: clamp(0.9rem, 2vw, 20rem);
             margin-top: 0;
+            padding: 20px;
+            line-height: 1
         }
         ul {
             list-style-type: none;
@@ -87,22 +91,18 @@
             margin-bottom: 20%;
             animation: float 7s ease-in-out infinite;
         }
-
         @keyframes float {
             0%   { transform: translateY(0px); }
             50%  { transform: translateY(-15px); }
             100% { transform: translateY(0px); }
         }
-
         .navRow a {
             text-decoration: none;
         }
-
         .navRow img {
             position: absolute;
             height: auto;
         }
-
         .ground {
             width: 65%;
             bottom: 21%;
@@ -110,36 +110,105 @@
             transform: translateX(-50%);
             z-index: 1;
         }
-
         .navBtn {
             width: 20%;
             z-index: 2;
             transition: filter 0.2s ease, transform 0.2s ease;
         }
-
         .navBtn:hover {
             filter: brightness(1.15);
-            transform: scale(1.15);
+            transform: scale(1.1);
         }
 
         /* Individual button positions */
         .aboutme {
             top: 9%;
             left: 22%;
-        }
-        
+        }        
         .projects {
             left: 50%;
             transform: translateX(-50%);
         }
-
         .projects:hover {
             transform: translateX(-50%) scale(1.05);
         }
-
         .events {
             top: 15%;
             left: 56%;
+        }
+        
+        /* ===== Projects ===== */
+        .project-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            justify-content: center;
+            padding: 2rem;
+        }
+
+        /* This is how it becomes a grid */
+        #project-list { 
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+            padding: 2rem;
+            max-width: 900px;
+            margin: 0 auto;
+            justify-content: center;
+        }
+
+.project-card {
+  width: 380px; /* give each card a fixed width so wrapping looks even */
+}
+
+        .project-card {
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+            width: 280px;
+            padding: 1rem;
+            text-align: center;
+            transition: transform 0.2s ease;
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .project-img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 0.75rem;
+        }
+
+        .project-title {
+            font-family: 'mightySouly', sans-serif;
+            margin-bottom: 0.5rem;
+        }
+
+        .project-desc {
+            font-size: 0.9rem;
+            color: #555;
+            margin-bottom: 1rem;
+        }
+
+        .project-btn {
+            display: inline-block;
+            font-family: 'paperNotes', sans-serif;
+            padding: 0.5rem 1.2rem;
+            background: linear-gradient(135deg, #ffd6e8, #d6e8ff);
+            border-radius: 20px;
+            text-decoration: none;
+            color: #333;
+            font-weight: 600;
+            transition: opacity 0.2s ease;
+        }
+
+        .project-btn:hover {
+        opacity: 0.8;
         }
     </style>
 </head>
@@ -163,7 +232,26 @@
 
     <h2 id="about-me">About me</h2>
     <p>Hi! I'm Cindy. I'm both a artist and a programmer.</p>
+
     <h2 id="projects">Projects</h2>
+    <ul id="project-list">
+        <div class="project-card">
+        <img src="assets/Project1_thumnail.png" alt="Project 1 thumnail" class="project-img">
+        <div class="project-info">
+            <h3 class="project-title">Portfolio Site</h3>
+            <p class="project-desc">Making my own portfolio site to display my projects, and introduce myself!</p>
+            <a href="Projects/p1_Porfolio.html" class="project-btn">Learn More</a>
+        </div>
+        </div>
+        <div class="project-card">
+        <img src="assets/Project1_thumnail.png" alt="Project 2 thumnail" class="project-img">
+        <div class="project-info">
+            <h3 class="project-title">Project 2</h3>
+            <p class="project-desc">Another short description here.</p>
+            <a href="project2.html" class="project-btn">Learn More</a>
+        </div>
+        </div>
+    </ul>
     <h2 id="events">Events</h2>
 
 </body>

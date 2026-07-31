@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Cindy Ge</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* ===== Fonts ===== */
+        @font-face {
+            font-family: 'mightySouly';
+            src: url(../MightySouly-lxggD.ttf);
+        }
+        @font-face {
+            font-family: 'starBorn';
+            src: url(../Starborn.ttf);
+        }
+        @font-face {
+            font-family: 'paperNotes';
+            src: url(../Papernotes.ttf);
+        }
+
+        /* ===== Background ===== */
+        body {
+            background: linear-gradient(-45deg, #ffbaba, #fbdaac, #ffe797, #ffdae3);
+            background-size: 1000%;
+            animation: gradientShift 12s ease infinite;
+        }
+        @keyframes gradientShift {
+            0%   { background-position: 0% 50%; }
+            50%  { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        /* ===== Text ===== */
+        h1 {
+            font-family: 'mightySouly';
+            font-size: clamp(0.9rem, 10vw, 20rem);
+            padding: 20px;
+            line-height: .2;
+        }
+        h2 {
+            font-family: 'mightySouly';
+            font-size: clamp(0.9rem, 4vw, 20rem);
+            padding: 20px;
+            line-height: .2;
+        }
+        p {
+            font-family: 'paperNotes';
+            font-size: clamp(0.9rem, 2vw, 20rem);
+            margin-top: 0;
+            padding: 20px;
+            line-height: 1
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        /* ===== buttons ===== */
+        .menuBtn {
+            font-family: 'mightySouly';
+            display: block;
+            margin: 1em auto;
+            border-radius: 5px;
+            width: 100px;
+            height: 25px;
+            padding: 10px;
+            background-color: rgb(255, 255, 255);
+            color: rgb(223, 156, 41);
+            text-align: center;
+            text-decoration: none;
+        }
+        .menuBtn:hover {
+            background-color: rgb(244, 214, 162);
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>Cindy Ge</h1>
+    <p>“Keep your face always toward the sunshine — and shadows will fall behind you.” — Walt Whitman</p>
+</body>
+</html>
