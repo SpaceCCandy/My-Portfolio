@@ -39,6 +39,7 @@
         h1 {
             font-family: 'mightySouly';
             font-size: clamp(0.9rem, 10vw, 20rem);
+            line-height: .2;
         }
         h2 {
             font-family: 'mightySouly';
@@ -82,8 +83,15 @@
             aspect-ratio: 20 / 9;
             position: relative;
             margin: 0 auto;
-            margin-top: 10%;
+            margin-top: 0%;
             margin-bottom: 20%;
+            animation: float 7s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0%   { transform: translateY(0px); }
+            50%  { transform: translateY(-15px); }
+            100% { transform: translateY(0px); }
         }
 
         .navRow a {
@@ -111,7 +119,7 @@
 
         .navBtn:hover {
             filter: brightness(1.15);
-            transform: scale(1.05);
+            transform: scale(1.15);
         }
 
         /* Individual button positions */
