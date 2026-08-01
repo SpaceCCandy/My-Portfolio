@@ -57,12 +57,18 @@
         p {
             font-family: 'paperNotes';
             font-size: clamp(0.9rem, 2vw, 20rem);
-            max-width: 60%;
+            max-width: 45%;
             margin: 0 auto;
             text-align: center;
-            margin-top: 0;
+            margin-bottom: 24px;
             line-height: 1
         }
+
+        a {
+            text-decoration: none;
+            color: inherit; /* optional: makes link text match surrounding text color instead of default blue */
+        }
+
         ul {
             list-style-type: none;
             padding: 0;
@@ -70,6 +76,10 @@
 
         .nav-text {
             color:#5b4949;
+        }
+        .mini-text {
+            font-size: clamp(0.9rem, 0.8vw, 20rem);
+            margin-bottom: 0;
         }
 
         /* ===== buttons ===== */
@@ -107,9 +117,6 @@
             0%   { transform: translateY(0px); }
             50%  { transform: translateY(-3%); }
             100% { transform: translateY(0px); }
-        }
-        .navRow a {
-            text-decoration: none;
         }
         .navRow img {
             position: absolute;
@@ -247,6 +254,7 @@
         .project-desc {
             font-size: 0.9rem;
             font-size: clamp(0.9rem, 1.5vw, 20rem);
+            max-width: 80%;
             color: #555;
             margin-bottom: 1rem;
             padding: 4%;
@@ -357,8 +365,13 @@
 
     <h3 id="about-me"  class="nav-text">▀▄▀▄▀▄▀▄▀ -  ❤︎ - ▀▄▀▄▀▄▀▄▀</h3>
     <h2>About me</h2>
-    <p>Hi! I'm Zhi Yao, but you can call me Cindy. I'm both a artist and a programmer, the world they create together is beautiful. I want this website to enbody my love for both art and STEM. </p>
-
+    <p>Hi! I'm Zhi Yao, but you can call me Cindy. I'm both a artist and a programmer. 
+        When I was little I wanted to be a fashion designer. I got into computer science during covid, 
+        and picked it up as a timepassing activity, but now it's a big part of what I do.
+        I want this website to embody my love for both art and STEM!!!
+    </p>
+    <p>Currently a high school student studying engineering. Some of my hobbies are drawing, and programming games, but I like creating things in genral.</p>
+    <p><b>Favorite food‎𐂐</b> Spaghetti & Macarons |  <b>Sign⭐</b> Scorpio?</p>
     <h3 id="projects"  class="nav-text">▀▄▀▄▀▄▀▄▀ - ★ - ▀▄▀▄▀▄▀▄▀</h3>
     <h2>Projects</h2>
     <ul id="project-list">
@@ -366,57 +379,61 @@
         <img src="assets/Project1_thumnail.png" alt="Project 1 thumnail" class="project-img">
         <div class="project-info">
             <h3 class="project-title">Portfolio Site</h3>
+            <p class="mini-text">july 2026</p>
             <p class="project-desc">Making my own portfolio site to display my projects, and introduce myself!</p>
-            <a href="Projects/p1_Porfolio.html" class="project-btn">Learn More</a>
+            <a href="https://github.com/SpaceCCandy/My-Portfolio" class="project-btn">Learn More</a>
         </div>
 
-        </div>
-        <div class="project-card">
-        <img src="assets/Project1_thumnail.png" alt="Project 2 thumnail" class="project-img">
-        <div class="project-info">
-            <h3 class="project-title">Project 2</h3>
-            <p class="project-desc">Another short description here.</p>
-            <a href="project2.html" class="project-btn">Learn More</a>
-        </div>
-        </div>
     </ul>
     <h3 id="events"  class="nav-text">▀▄▀▄▀▄▀▄▀ - ✦ - ▀▄▀▄▀▄▀▄▀</h3>
     <h2>Events</h2>
 
     <div class="timeline">
         <div class="timeline-item">
-            <div class="timeline-time">Time</div>
+            <div class="timeline-time">Sept 2023</div>
             <div class="timeline-dot"></div>
             <div class="timeline-desc">
-                <span class="timeline-activity">Activity</span>
-                <p class="timeline-detail">description...</p>
+                <span class="timeline-activity">Vex Robotics</span>
+                <p class="timeline-detail">I joined my school's JROTC Vex V5 Robotics</p>
             </div>
         </div>
 
         <div class="timeline-item">
-            <div class="timeline-time">Time</div>
+            <div class="timeline-time">Apr 2024</div>
             <div class="timeline-dot"></div>
             <div class="timeline-desc">
-                <span class="timeline-activity">Activity</span>
-                <p class="timeline-detail">description.. description..description.. description.. vdescription.. .description.. description..description.. description.. vdescription.. .description.. description..description.. description.. vdescription.. .</p>
+                <span class="timeline-activity">Vex worlds 2024</span>
+                <p class="timeline-detail">Going to Vex worlds 2024 🥳</p>
             </div>
         </div>
 
         <div class="timeline-item">
-            <div class="timeline-time">Time</div>
+            <div class="timeline-time">Jul 2024</div>
             <div class="timeline-dot"></div>
             <div class="timeline-desc">
-                <span class="timeline-activity">Activity</span>
-                <p class="timeline-detail">description.. description..description.. description.. vdescription.. .</p>
+                <span class="timeline-activity">Cooper Summer STEM Program</span>
+                <p class="timeline-detail">I took the intro to engineering course and it was so fun!</p>
             </div>
         </div>
 
+        <div class="timeline-item">
+            <div class="timeline-time">Oct 2024</div>
+            <div class="timeline-dot"></div>
+            <div class="timeline-desc">
+                <span class="timeline-activity">Cooper Saturday STEM Program</span>
+                <p class="timeline-detail">I spent a lot of time in the makerspace, and got my intro to arduinos ✨</p>
+            </div>
+        </div>
         <!-- copy this block for each new event -->
 
     </div>
 
     <h3 id="contacts"  class="nav-text">▀▄▀▄▀▄▀▄▀ - ✿ - ▀▄▀▄▀▄▀▄▀</h3>
     <h2>Contacts</h2>
+
+    <p><b>Email:</b> spaceccandy@gmail.com</p>
+    <p><b>Discord:</b> cruffle3572</p>
+    <p><b>GitHub:</b><a href="https://github.com/SpaceCCandy"> https://github.com/SpaceCCandy</a></p>
 
     <script>
     const stickyNav = document.getElementById('sticky-nav');
