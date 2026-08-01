@@ -46,7 +46,13 @@
             font-family: 'mightySouly';
             font-size: clamp(0.9rem, 4vw, 20rem);
             text-align: center;
-            line-height: .2;
+            line-height: 1;
+        }
+        h3 {
+            font-family: 'mightySouly';
+            font-size: clamp(0.9rem, 2vw, 20rem);
+            text-align: center;
+            line-height: 1;
         }
         p {
             font-family: 'paperNotes';
@@ -60,6 +66,10 @@
         ul {
             list-style-type: none;
             padding: 0;
+        }
+
+        .nav-text {
+            color:#5b4949;
         }
 
         /* ===== buttons ===== */
@@ -262,37 +272,38 @@
         /* ==== Event Timeline ==== */
         .timeline {
             max-width: 70%;
+            position: relative;
             margin: 0 auto;
             padding: 2rem;
         }
 
         .timeline-item {
             display: grid;
-            grid-template-columns: 100px 40px 1fr; /* time | dot | description */
+            grid-template-columns: 90px 80px 1fr; /* time | dot | description */
             align-items: start;
-        }
-
-        .timeline-activity {
-            font-family: 'mightySouly';  
-            font-size: 1.3rem;          
-            display: block;
         }
 
         .timeline-time {
             font-family: 'mightySouly';
-            font-size: 1.3rem;        
+            font-size: clamp(0.9rem, 3vw, 1.4rem);
+            display: block;
+        }
+
+        .timeline-activity {
+            font-family: 'mightySouly';  
+            font-size: clamp(0.9rem, 3vw, 1.6rem);          
             display: block;
         }
 
         .timeline-detail {
             font-family: 'paperNotes';
-        font-size: 0.9rem;
-        color: #555;
-        margin: 0;
-        padding: 0;
-        max-width: none;
-        text-align: left;
-        }
+            font-size: clamp(0.9rem, 1.2vw, 20rem);
+            color: #555;
+            margin: 0;
+            padding: 0;
+            max-width: none;
+            text-align: left;
+            }
 
         .timeline-dot {
             position: relative;
@@ -305,19 +316,15 @@
             z-index: 1;
         }
 
-        .timeline-dot::before {
+        .timeline::before {
             content: '';
             position: absolute;
-            top: 16px;
-            left: 50%;
-            transform: translateX(-50%);
+            top: 2rem;
+            bottom: 2rem;
+            left: calc(2rem + 90px + 40px); /* padding + time column + half of dot column */
             width: 3px;
-            height: 100px; /* line length between dots */
             background: #333;
-        }
-
-        .timeline-item:last-child .timeline-dot::before {
-            display: none; /* no trailing line after the last dot */
+            z-index: 0;
         }
     </style>
 </head>
@@ -328,6 +335,7 @@
             <li><a href="#about-me">About Me</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#events">Events</a></li>
+            <li><a href="#contacts">Contacts</a></li>
         </ul>
     </nav>
 
@@ -347,10 +355,12 @@
         </a>
     </div>
 
-    <h2 id="about-me">About me</h2>
+    <h3 id="about-me"  class="nav-text">▀▄▀▄▀▄▀▄▀ -  ❤︎ - ▀▄▀▄▀▄▀▄▀</h3>
+    <h2>About me</h2>
     <p>Hi! I'm Zhi Yao, but you can call me Cindy. I'm both a artist and a programmer, the world they create together is beautiful. I want this website to enbody my love for both art and STEM. </p>
 
-    <h2 id="projects">Projects</h2>
+    <h3 id="projects"  class="nav-text">▀▄▀▄▀▄▀▄▀ - ★ - ▀▄▀▄▀▄▀▄▀</h3>
+    <h2>Projects</h2>
     <ul id="project-list">
         <div class="project-card">
         <img src="assets/Project1_thumnail.png" alt="Project 1 thumnail" class="project-img">
@@ -370,7 +380,8 @@
         </div>
         </div>
     </ul>
-    <h2 id="events">Events</h2>
+    <h3 id="events"  class="nav-text">▀▄▀▄▀▄▀▄▀ - ✦ - ▀▄▀▄▀▄▀▄▀</h3>
+    <h2>Events</h2>
 
     <div class="timeline">
         <div class="timeline-item">
@@ -387,13 +398,25 @@
             <div class="timeline-dot"></div>
             <div class="timeline-desc">
                 <span class="timeline-activity">Activity</span>
-                <p class="timeline-detail">description...</p>
+                <p class="timeline-detail">description.. description..description.. description.. vdescription.. .description.. description..description.. description.. vdescription.. .description.. description..description.. description.. vdescription.. .</p>
+            </div>
+        </div>
+
+        <div class="timeline-item">
+            <div class="timeline-time">Time</div>
+            <div class="timeline-dot"></div>
+            <div class="timeline-desc">
+                <span class="timeline-activity">Activity</span>
+                <p class="timeline-detail">description.. description..description.. description.. vdescription.. .</p>
             </div>
         </div>
 
         <!-- copy this block for each new event -->
 
     </div>
+
+    <h3 id="contacts"  class="nav-text">▀▄▀▄▀▄▀▄▀ - ✿ - ▀▄▀▄▀▄▀▄▀</h3>
+    <h2>Contacts</h2>
 
     <script>
     const stickyNav = document.getElementById('sticky-nav');
