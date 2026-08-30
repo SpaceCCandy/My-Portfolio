@@ -38,14 +38,15 @@
         /* ===== Text ===== */
         h1 {
             font-family: 'mightySouly';
-            font-size: clamp(0.9rem, 10vw, 20rem);
+            font-size: 300%;
             padding: 20px;
             line-height: .2;
         }
         h2 {
             font-family: 'mightySouly';
             font-size: clamp(0.9rem, 4vw, 20rem);
-            padding: 10%;
+            padding-top: 10%;
+            padding-left: 8%;
             line-height: .2;
         }
         p {
@@ -53,12 +54,72 @@
             font-size: clamp(0.9rem, 2vw, 20rem);
             margin: 0 auto;
             margin-top: 0;
-            padding: 10%;
-            line-height: 1
+            width: 80%;
         }
         ul {
             list-style-type: none;
             padding: 0;
+        }
+
+        /* ===== title ===== */
+        #header {
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            background-color: white;
+            
+        }
+
+        #header a {
+            margin: auto;
+            font-family: 'mightySouly';
+            display: block;
+            text-align: center;
+            text-decoration: none;
+            line-height: 250%;
+            border-radius: 5px;
+            width: 10%;
+            background-color: rgb(215, 157, 166);
+            color: rgb(255, 255, 255);
+            transition: background-color 0.2s ease;
+        }
+
+        #header a:hover {
+            background-color: rgb(239, 191, 198);
+        }
+
+        #title {
+            padding: auto;
+        }
+
+        #subtext {
+            font-family: 'paperNotes';
+            padding: auto;
+            margin: auto;
+        }
+
+        .intro {
+            width: 85%;
+            padding-bottom: 3%;
+        }
+
+        /* ===== How I built it ===== */
+        #how {
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+        }
+
+        #how p {
+            max-width: 70%;
+            padding-bottom: 5%;
+        }
+
+        #how img {
+            margin-right: 5%;
+            border-radius: 10px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+            transform: rotate(-2deg);
         }
 
         /* ===== buttons ===== */
@@ -82,7 +143,37 @@
     </style>
 </head>
 <body>
-    <h1>Cindy Ge</h1>
-    <p>“Keep your face always toward the sunshine — and shadows will fall behind you.” — Walt Whitman</p>
+    <div id="header">
+        <h1 id="title">Portfolio Site</h1>
+        <h4 id="subtext">Last updated: August 2026</h4>
+        <a href="https://github.com/SpaceCCandy/My-Portfolio">GITHub</a>
+        <a href="../index.html#projects">back</a>
+    </div>
+    <h2 id="Title-text">Problem</h2>
+    <p class="intro">
+        I've been wanting to create website to display my projects for a while now. Sometimes the fun things I create gets lost, or taken apart. This is my way of keep all my project a memory of how far I've come.
+    </p>
+    <p class="intro">
+        This is it. On this website I can tell others about my likes and dislikes. Hobbies, who I am! I can keep track of my projects hear through project pages like this. And showing people what i'm up to now.
+    </p>
+
+    <h2 id="Title-text">How I built it</h2>
+    <div id="how">
+        <div>
+            <p>
+                I used mostly HTML and CSS to build this with a bit of Java script. 
+                For visuals, I used blender to 3D model the navigation icon on the home screen, then turned them into transparent pngs.
+            </p>
+            <p>
+                The picture on the left shows a planning sheet I before I started coding.
+            </p>  
+        </div> 
+        <img src="Photo1.png" alt="Planning of website" width=40%>
+    </div> 
+    
+    <h2 id="Title-text">Challenges I had</h2>
+
+    <h2 id="Title-text">What I learned</h2>
+
 </body>
 </html>

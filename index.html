@@ -276,64 +276,6 @@
         .project-btn:hover {
             opacity: 0.8;
         }
-
-        /* ==== Event Timeline ==== */
-        .timeline {
-            max-width: 70%;
-            position: relative;
-            margin: 0 auto;
-            padding: 2rem;
-        }
-
-        .timeline-item {
-            display: grid;
-            grid-template-columns: 90px 80px 1fr; /* time | dot | description */
-            align-items: start;
-        }
-
-        .timeline-time {
-            font-family: 'mightySouly';
-            font-size: clamp(0.9rem, 3vw, 1.4rem);
-            display: block;
-        }
-
-        .timeline-activity {
-            font-family: 'mightySouly';  
-            font-size: clamp(0.9rem, 3vw, 1.6rem);          
-            display: block;
-        }
-
-        .timeline-detail {
-            font-family: 'paperNotes';
-            font-size: clamp(0.9rem, 1.2vw, 20rem);
-            color: #555;
-            margin: 0;
-            padding: 0;
-            max-width: none;
-            text-align: left;
-            }
-
-        .timeline-dot {
-            position: relative;
-            width: 16px;
-            height: 16px;
-            background: white;
-            border: 3px solid #333;
-            border-radius: 50%;
-            justify-self: center;
-            z-index: 1;
-        }
-
-        .timeline::before {
-            content: '';
-            position: absolute;
-            top: 2rem;
-            bottom: 2rem;
-            left: calc(2rem + 90px + 40px); /* padding + time column + half of dot column */
-            width: 3px;
-            background: #333;
-            z-index: 0;
-        }
     </style>
 </head>
 <body>
@@ -376,57 +318,18 @@
     <h2>Projects</h2>
     <ul id="project-list">
         <div class="project-card">
-        <img src="assets/Project1_thumnail.png" alt="Project 1 thumnail" class="project-img">
-        <div class="project-info">
-            <h3 class="project-title">Portfolio Site</h3>
-            <p class="mini-text">july 2026</p>
-            <p class="project-desc">Making my own portfolio site to display my projects, and introduce myself!</p>
-            <a href="https://github.com/SpaceCCandy/My-Portfolio" class="project-btn">Learn More</a>
+            <img src="assets/Project1_thumnail.png" alt="Project 1 thumnail" class="project-img">
+            <div class="project-info">
+                <h3 class="project-title">Portfolio Site</h3>
+                <p class="mini-text">july 2026</p>
+                <p class="project-desc">Making my own portfolio site to display my projects, and introduce myself!</p>
+                <a href="Projects/p1_Porfolio.html" class="project-btn">Learn More</a>
         </div>
 
     </ul>
     <h3 id="events"  class="nav-text">▀▄▀▄▀▄▀▄▀ - ✦ - ▀▄▀▄▀▄▀▄▀</h3>
     <h2>Events</h2>
 
-    <div class="timeline">
-        <div class="timeline-item">
-            <div class="timeline-time">Sept 2023</div>
-            <div class="timeline-dot"></div>
-            <div class="timeline-desc">
-                <span class="timeline-activity">Vex Robotics</span>
-                <p class="timeline-detail">I joined my school's JROTC Vex V5 Robotics</p>
-            </div>
-        </div>
-
-        <div class="timeline-item">
-            <div class="timeline-time">Apr 2024</div>
-            <div class="timeline-dot"></div>
-            <div class="timeline-desc">
-                <span class="timeline-activity">Vex worlds 2024</span>
-                <p class="timeline-detail">Going to Vex worlds 2024 🥳</p>
-            </div>
-        </div>
-
-        <div class="timeline-item">
-            <div class="timeline-time">Jul 2024</div>
-            <div class="timeline-dot"></div>
-            <div class="timeline-desc">
-                <span class="timeline-activity">Cooper Summer STEM Program</span>
-                <p class="timeline-detail">I took the intro to engineering course and it was so fun!</p>
-            </div>
-        </div>
-
-        <div class="timeline-item">
-            <div class="timeline-time">Oct 2024</div>
-            <div class="timeline-dot"></div>
-            <div class="timeline-desc">
-                <span class="timeline-activity">Cooper Saturday STEM Program</span>
-                <p class="timeline-detail">I spent a lot of time in the makerspace, and got my intro to arduinos ✨</p>
-            </div>
-        </div>
-        <!-- copy this block for each new event -->
-
-    </div>
 
     <h3 id="contacts"  class="nav-text">▀▄▀▄▀▄▀▄▀ - ✿ - ▀▄▀▄▀▄▀▄▀</h3>
     <h2>Contacts</h2>
