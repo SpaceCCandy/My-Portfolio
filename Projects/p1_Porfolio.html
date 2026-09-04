@@ -45,21 +45,31 @@
         h2 {
             font-family: 'mightySouly';
             font-size: clamp(0.9rem, 4vw, 20rem);
-            padding-top: 10%;
             padding-left: 8%;
             line-height: .2;
         }
+
+        h3 {
+            font-family: 'mightySouly';
+            font-size: clamp(0.9rem, 3vw, 20rem);
+            padding-top: 3%;
+            padding-left: 8%;
+            line-height: .2;
+        }
+
         p {
             font-family: 'paperNotes';
             font-size: clamp(0.9rem, 2vw, 20rem);
             margin: 0 auto;
+            width: 85%;
+            padding-bottom: 3%;
             margin-top: 0;
-            width: 80%;
         }
         ul {
             list-style-type: none;
             padding: 0;
         }
+
 
         /* ===== title ===== */
         #header {
@@ -98,9 +108,16 @@
             margin: auto;
         }
 
-        .intro {
-            width: 85%;
-            padding-bottom: 3%;
+        /* ==== Section Title ====*/
+        .Title-text {
+            width: 40%;
+            height: 10%;
+            border-radius: 10px;
+            border-color: white;
+            background-color: #edacb6;
+            color: rgb(0, 0, 0);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+            padding: 5%;
         }
 
         /* ===== How I built it ===== */
@@ -112,7 +129,6 @@
 
         #how p {
             max-width: 70%;
-            padding-bottom: 5%;
         }
 
         #how img {
@@ -146,10 +162,10 @@
     <div id="header">
         <h1 id="title">Portfolio Site</h1>
         <h4 id="subtext">Last updated: August 2026</h4>
-        <a href="https://github.com/SpaceCCandy/My-Portfolio">GITHub</a>
+        <a id="back" href="https://github.com/SpaceCCandy/My-Portfolio">GITHub</a>
         <a href="../index.html#projects">back</a>
     </div>
-    <h2 id="Title-text">Problem</h2>
+    <h2 class="Title-text">Problem</h2>
     <p class="intro">
         I've been wanting to create website to display my projects for a while now. Sometimes the fun things I create gets lost, or taken apart. This is my way of keep all my project a memory of how far I've come.
     </p>
@@ -157,7 +173,7 @@
         This is it. On this website I can tell others about my likes and dislikes. Hobbies, who I am! I can keep track of my projects hear through project pages like this. And showing people what i'm up to now.
     </p>
 
-    <h2 id="Title-text">How I built it</h2>
+    <h2 class="Title-text">How I built it</h2>
     <div id="how">
         <div>
             <p>
@@ -166,14 +182,24 @@
             </p>
             <p>
                 The picture on the left shows a planning sheet I before I started coding.
+            </p>
+            <p>
+                Something that really helped me was <a href="https://www.w3schools.com/html/">w3schools</a>. There are a lot of different html techniques I saw on there that was incorprated onto my site.
             </p>  
         </div> 
         <img src="Photo1.png" alt="Planning of website" width=40%>
     </div> 
     
-    <h2 id="Title-text">Challenges I had</h2>
+    <h2 class="Title-text">Challenges I had</h2>
+    <p>I spent a long time getting the <b>"island navigation"</b> to work, and displaying the image buttons correctly on all devices and aspect ratios.</p>
+    <p>To fix this I adjusted the postions back and forth, changing the margin and padding on the elements, and instead of using a static # of px for the padding/ margin, I used a percentage.</p>
+    <p>Simalarly, I also had issues getting the sizing right for text sizes.</p>
 
-    <h2 id="Title-text">What I learned</h2>
+    <h2 class="Title-text">What I learned</h2>
+    <h3>Size ratio</h3>
+    <p>I had to learn how to work with sizing the elements correctly so it looks right on different devices. This meant instead of using something like "20px" for distance and sizing. I used a percentage.</p>
+    <p><b>Ex: max-width: 70%;</b></p>
+    <p>70% percent means the box that this element is in weather it's a <b>"div"</b> or just the text on it's own. The max-width will be 70% percent of that.</p>
 
 </body>
 </html>
