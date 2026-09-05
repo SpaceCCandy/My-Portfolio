@@ -276,6 +276,62 @@
         .project-btn:hover {
             opacity: 0.8;
         }
+
+        /* ==== Events ====*/
+        .scroll-container {
+            overflow: hidden; /* Hides items that extend beyond the screen width */
+            width: 100%;
+            padding: 20px 0;
+        }
+
+        .scroll-track {
+            display: flex;
+            width: max-content; /* Forces all items onto a single continuous line */
+            animation: scrollLeft 30s linear infinite; /* Control speed by changing 15s */
+        }
+
+        .scroll-item {
+            width: 150px; /* Give each item a fixed width */
+            margin: 0 30px; /* Space out your items */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: bold;
+            font-family: sans-serif;
+            color: #333;
+        }
+
+            /* The magic animation: Moves the track left by exactly half its length */
+        @keyframes scrollLeft {
+            0% {
+                transform: translateX(0);
+            }
+            100% {
+                transform: translateX(-50%);
+            }
+        }
+
+        .feed-item {
+            width: 70vh;
+            height: 70vh;
+            border-radius: 10px;
+            margin: 1%;
+            background-color: white;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+        }
+
+        .feed-item img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            border-radius: 10px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+        }
+
+        .feed-item p {
+            padding-top: 5%;
+            max-width: 80%;
+        }
     </style>
 </head>
 <body>
@@ -329,7 +385,80 @@
     </ul>
     <h3 id="events"  class="nav-text">▀▄▀▄▀▄▀▄▀ - ✦ - ▀▄▀▄▀▄▀▄▀</h3>
     <h2>Events</h2>
+    <div class="scroll-container">
+        <div class="scroll-track">
+            <div class="feed-item">
+                <h3>Vex V5 Robotics</h3>
+                <img src="assets/VexRegionalTeam.png" alt="High Stakes Regional Team Picture" width="80%">
+                <p>Our Team at High Stakes Regionals</p>
+                <p>A member of a JROTC Vex V5 Robotics team 59158! We went to Vex worlds 2023-24.</p>
+            </div>
+            <div class="feed-item">
+                <h3>First Robotics Competition</h3>
+                <img src="assets/FRC.png" alt="FRC Logo" width="70%">
+                <p>A part of the FRC team 3017!</p>
 
+                <img src="">
+            </div>
+            <div class="feed-item">
+                <h3>Cyber Patriots</h3>
+                <img src="assets/CYBERPATRIOT_Defense-Competition_Blue.png" alt="Cyber Patriots" width="50%">
+                <p>Joined Cyber Patriots which is a Cyber security competition where student gain points through finding vurinablities, and solve problems.</p>
+            </div>
+            <div class="feed-item">
+                <h3>Imission Youth Global</h3>
+                <img src="assets/Imission.jpg" alt="Picture of kids drawing" width="80%">
+                <p>STEM Securtary of non-profit organization called Imission Youth where we introduce kids to different fields such as STEM, Med, or business.</p>
+            </div>
+            <div class="feed-item">
+                <h3>Lirvana Internship</h3>
+                <img src="assets/Lirvana-Labs.png" alt="Lirvana Labs Logo" width="50%">
+                <p>Summer of 2026</p>
+                <p>Summer internship with Lirvana Labs to create a AI product to help students with their PoG and highschool journey.</p>
+            </div>
+            <div class="feed-item">
+                <h3>Jrotc</h3>
+                <img src="assets/JROTC.jpg" alt="JROTC group picture" width="80%">
+                <p>Jrotc Program at Francis Lewis Highschool since freshmen year!</p>
+            </div>
+
+            <!-- Copy so scroll looks normal -->
+            <div class="feed-item">
+                <h3>Vex V5 Robotics</h3>
+                <img src="assets/VexRegionalTeam.png" alt="High Stakes Regional Team Picture" width="80%">
+                <p>Our Team at High Stakes Regionals</p>
+                <p>A member of a JROTC Vex V5 Robotics team 59158! We went to Vex worlds 2023-24.</p>
+            </div>
+            <div class="feed-item">
+                <h3>First Robotics Competition</h3>
+                <img src="assets/FRC.png" alt="FRC Logo" width="70%">
+                <p>A part of the FRC team 3017!</p>
+
+                <img src="">
+            </div>
+            <div class="feed-item">
+                <h3>Cyber Patriots</h3>
+                <img src="assets/CYBERPATRIOT_Defense-Competition_Blue.png" alt="Cyber Patriots" width="50%">
+                <p>Joined Cyber Patriots which is a Cyber security competition where student gain points through finding vurinablities, and solve problems.</p>
+            </div>
+            <div class="feed-item">
+                <h3>Imission Youth Global</h3>
+                <img src="assets/Imission.jpg" alt="Picture of kids drawing" width="80%">
+                <p>STEM Securtary of non-profit organization called Imission Youth where we introduce kids to different fields such as STEM, Med, or business.</p>
+            </div>
+            <div class="feed-item">
+                <h3>Lirvana Internship</h3>
+                <img src="assets/Lirvana-Labs.png" alt="Lirvana Labs Logo" width="50%">
+                <p>Summer of 2026</p>
+                <p>Summer internship with Lirvana Labs to create a AI product to help students with their PoG and highschool journey.</p>
+            </div>
+            <div class="feed-item">
+                <h3>Jrotc</h3>
+                <img src="assets/JROTC.jpg" alt="JROTC group picture" width="80%">
+                <p>Jrotc Program at Francis Lewis Highschool since freshmen year!</p>
+            </div>
+        </div>
+    </div>
 
     <h3 id="contacts"  class="nav-text">▀▄▀▄▀▄▀▄▀ - ✿ - ▀▄▀▄▀▄▀▄▀</h3>
     <h2>Contacts</h2>
