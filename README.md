@@ -16,3 +16,16 @@ This website includes..
 - Projects
 - Events/ Activies
 - Contacts
+
+### Projects
+- You can click into it and it brings you to a overview of the project, challenges faced, and learnings
+- Image(s), and the Github Linked
+
+### Events/ Activites
+- A scrolling panel of events/ activaties I've participated in
+- Image and description
+
+### Contacts
+- Email
+- Discord
+- Github
